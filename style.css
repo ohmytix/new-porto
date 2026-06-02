@@ -1,0 +1,499 @@
+/* ==========================================================================
+   1. RESET & BASE STYLES (Gaya Dasar)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #4f46e5;
+    --secondary-color: #818cf8;
+    --dark-color: #0f172a;
+    --light-color: #f8fafc;
+    --text-dark: #334155;
+    --text-light: #94a3b8;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. NAVBAR (Navigasi Atas)
+   ========================================================================== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* ==========================================================================
+   3. HERO SECTION (Halaman Utama Depan)
+   ========================================================================== */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background: linear-gradient(135deg, var(--dark-color) 0%, #1e1b4b 100%);
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content h1 span {
+    color: var(--secondary-color);
+}
+
+.hero-content h3 {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   4. LAYOUT UMUM & KOMPONEN
+   ========================================================================== */
+.section {
+    padding: 5rem 10%;
+}
+
+.bg-light {
+    background-color: #f1f5f9;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    color: var(--dark-color);
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   5. TIMELINE (Pengalaman Kerja / Organisasi)
+   ========================================================================== */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: calc(-2rem - 9px);
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.timeline-date {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content h3 {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   6. PORTFOLIO CARD (Grid Proyek Halaman Depan)
+   ========================================================================== */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    padding: 2rem;
+    border-top: 4px solid var(--primary-color);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-info h3 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.portfolio-info p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background-color: #e2e8f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+/* ==========================================================================
+   7. SKILLS (Bagian Keahlian)
+   ========================================================================== */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   8. HALAMAN DOKUMENTASI PROYEK (Project Case Study)
+   ========================================================================== */
+.doc-section {
+    padding: 8rem 10% 4rem 10%; /* Ditambah padding top agar tidak tertutup navbar */
+    background-color: #ffffff;
+}
+
+.doc-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+}
+
+.doc-header {
+    margin-bottom: 3rem;
+}
+
+.project-category {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-title {
+    font-size: 2.8rem;
+    color: var(--dark-color);
+    line-height: 1.2;
+    margin: 0.5rem 0;
+}
+
+.project-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.meta-item {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+/* Galeri Gambar Dokumentasi */
+.doc-gallery {
+    margin-bottom: 3rem;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.sub-previews {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Grid Konten Utama vs Sidebar */
+.doc-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.doc-block {
+    margin-bottom: 2.5rem;
+}
+
+.doc-block h2 {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.doc-block p {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.doc-list {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.doc-list li {
+    margin-bottom: 0.5rem;
+}
+
+.doc-quote {
+    background-color: #f8fafc;
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+    color: var(--text-dark);
+    font-style: italic;
+    margin: 1.5rem 0;
+}
+
+/* Sidebar Kanan */
+.sidebar-card {
+    background-color: #f1f5f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-card h3 {
+    font-size: 1.2rem;
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.btn-full {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ==========================================================================
+   9. FOOTER (Bagian Bawah Web)
+   ========================================================================== */
+footer {
+    background-color: var(--dark-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   10. MEDIA QUERIES (Responsif HP / Tablet)
+   ========================================================================== */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    /* Navigasi Mobile */
+    .menu-toggle { 
+        display: block; 
+    }
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    }
+    .nav-links.active { 
+        left: 0; 
+    }
+    .nav-links li { 
+        margin: 1.5rem 0; 
+    }
+    .nav-links li a { 
+        margin-left: 0; 
+    }
+    
+    /* Hero Mobile */
+    .hero-content h1 { 
+        font-size: 2.5rem; 
+    }
+    
+    /* Dokumentasi Proyek Mobile */
+    .doc-section {
+        padding: 6rem 5% 4rem 5%;
+    }
+    .project-title {
+        font-size: 2rem;
+    }
+    .sub-previews {
+        grid-template-columns: 1fr;
+    }
+    .doc-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

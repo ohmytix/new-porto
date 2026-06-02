@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Hafidh<span>Khoiri</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#skills">Skill</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header id="about" class="hero-section">
+        <div class="hero-content">
+            <h1>Halo, Saya <span>M. Hafidh Khoiri</span></h1>
+            <h3>Junior DevOps</h3>
+            <p>Saya adalah seorang yang berdedikasi tinggi dalam bidang DevOps. Fokus saya adalah membangun solusi digital yang estetik dan fungsional. Senang belajar hal baru dan berkolaborasi dalam tim.</p>
+            <a href="#portfolio" class="btn">Lihat Karya Saya</a>
+        </div>
+    </header>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Pengalaman Kerja & Organisasi</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2024 - Sekarang</div>
+                <div class="timeline-content">
+                    <h3>Frontend Developer</h3>
+                    <h4>PT. Teknologi Maju</h4>
+                    <p>Mengembangkan dan memelihara antarmuka website perusahaan menggunakan HTML, CSS, dan JavaScript modern untuk meningkatkan pengalaman pengguna.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2022 - 2024</div>
+                <div class="timeline-content">
+                    <h3>Ketua Divisi Hubungan Masyarakat</h3>
+                    <h4>Himpunan Mahasiswa Komputer</h4>
+                    <p>Memimpin tim beranggotakan 10 orang untuk mengelola komunikasi eksternal dan media sosial organisasi, meningkatkan keterlibatan pengikut hingga 40%.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-light">
+        <h2 class="section-title">Portofolio Proyek</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-info">
+                    <h3>Deploy Static Website with Docker</h3>
+                    <p>Desain platform belanja online responsif dengan fitur keranjang belanja interaktif.</p>
+                    <span class="tag">Linux</span> <span class="tag">Docker</span>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-info">
+                    <h3>Self-Hosted Git Server (Gitea)</h3>
+                    <p>Website resmi untuk perusahaan logistik dengan optimasi SEO dan kecepatan loading maksimal.</p>
+                    <span class="tag">HTML</span> <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-info">
+                    <h3>Aplikasi Task Manager</h3>
+                    <p>Aplikasi pengelola tugas harian berbasis web dengan fitur local storage untuk menyimpan data.</p>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skill & Keahlian</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Public Speaking</div>
+            <div class="skill-card">Manajemen Tim</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> M. Hafidh Khoiri. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

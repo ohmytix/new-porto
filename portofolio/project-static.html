@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Proyek - Nama Proyek</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Nama<span>Anda</span>.</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="index.html#experience">Pengalaman</a></li>
+            <li><a href="index.html#portfolio">Portofolio</a></li>
+            <li><a href="index.html#skills">Skill</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main class="doc-section">
+        <div class="doc-container">
+            
+            <a href="index.html#portfolio" class="back-btn">&larr; Kembali ke Portofolio</a>
+
+            <header class="doc-header">
+                <span class="project-category">[Kategori: Web App / UI UX Design]</span>
+                <h1 class="project-title">[Nama Proyek Utama Kamu]</h1>
+                <p class="project-subtitle">[Slogan singkat proyek, misal: Platform e-commerce modern dengan sistem pembayaran instan]</p>
+                
+                <div class="project-meta">
+                    <div class="meta-item"><strong>Peran:</strong> Frontend Developer</div>
+                    <div class="meta-item"><strong>Durasi:</strong> 3 Minggu (Januari 2026)</div>
+                    <div class="meta-item"><strong>Status:</strong> Selesai</div>
+                </div>
+            </header>
+
+            <div class="doc-gallery">
+                <div class="main-preview">
+                    <img src="https://via.placeholder.com/1200x600" alt="Pratinjau Utama Proyek" class="responsive-img">
+                </div>
+                <div class="sub-previews">
+                    <img src="https://via.placeholder.com/600x400" alt="Tampilan Mobile" class="responsive-img">
+                    <img src="https://via.placeholder.com/600x400" alt="Fitur Dashboard" class="responsive-img">
+                </div>
+            </div>
+
+            <div class="doc-grid">
+                
+                <div class="doc-main-content">
+                    
+                    <section class="doc-block">
+                        <h2>1. Ringkasan Proyek & Tantangan</h2>
+                        <p>Jelaskan latar belakang proyek ini di sini. Mengapa kamu membuatnya? Masalah apa yang ingin kamu selesaikan? Berikan gambaran umum yang jelas agar pembaca langsung paham esensi dari proyek yang kamu kerjakan.</p>
+                    </section>
+
+                    <section class="doc-block">
+                        <h2>2. Fitur Utama</h2>
+                        <p>Sebutkan poin-poin fitur terbaik yang berhasil kamu implementasikan ke dalam proyek ini:</p>
+                        <ul class="doc-list">
+                            <li><strong>Desain Responsif:</strong> Tampilan optimal diakses dari perangkat mobile, tablet, maupun desktop.</li>
+                            <li><strong>Optimasi Kecepatan:</strong> Pengurangan ukuran aset gambar untuk loading halaman di bawah 2 detik.</li>
+                            <li><strong>Integrasi API:</strong> Menghubungkan front-end dengan data eksternal secara asinkron.</li>
+                        </ul>
+                    </section>
+
+                    <section class="doc-block">
+                        <h2>3. Proses Pembuatan & Solusi</h2>
+                        <p>Ceritakan metodologi kerjamu atau kendala teknis yang sempat membuatmu pusing, lalu jelaskan bagaimana cara kamu menyelesaikannya.</p>
+                        <blockquote class="doc-quote">
+                            <strong>Tantangan Teknis:</strong> Keranjang belanja sempat tidak memperbarui total harga secara otomatis saat jumlah produk diubah.<br>
+                            <strong>Solusi:</strong> Menggunakan teknik event delegation pada JavaScript untuk mendeteksi perubahan state secara real-time.
+                        </blockquote>
+                    </section>
+
+                </div>
+
+                <aside class="doc-sidebar">
+                    
+                    <div class="sidebar-card">
+                        <h3>Teknologi</h3>
+                        <div class="tech-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3>Tautan Proyek</h3>
+                        <a href="#" class="btn btn-full" target="_blank">Kunjungi Live Demo</a>
+                        <a href="#" class="btn btn-full btn-outline" target="_blank">Lihat Kode di GitHub</a>
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> [Nama Anda]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
