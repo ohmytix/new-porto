@@ -18,6 +18,10 @@
     --text-light: #94a3b8;
 }
 
+a, u {
+    text-decoration: none;
+}
+
 body {
     background-color: var(--light-color);
     color: var(--text-dark);
@@ -78,6 +82,35 @@ body {
     background: linear-gradient(135deg, var(--dark-color) 0%, #1e1b4b 100%);
     color: white;
     padding-top: 80px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .hero-content h1 {
@@ -146,6 +179,27 @@ body {
     background-color: var(--primary-color);
     margin: 10px auto 0 auto;
     border-radius: 2px;
+}
+
+.code-container{
+    background:#0f172a;
+    border-radius:16px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+.code-container pre{
+    margin:0;
+    padding:25px;
+    overflow-x:auto;
+    color:springgreen;
+}
+
+.code-container code{
+    color:#4f46e5;
+    font-family:'Courier New', monospace;
+    font-size:.9rem;
+    line-height:1.8;
 }
 
 /* ==========================================================================
@@ -496,4 +550,172 @@ footer {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    .section-desc{
+    margin-bottom:20px;
+    color:#64748b;
+}
+/* ==========================================
+MODERN TECHNOLOGY TABLE
+========================================== */
+
+.section-desc{
+margin-bottom:20px;
+color:#64748b;
+}
+
+.modern-tech-table{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #e2e8f0;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+margin-top:20px;
+}
+
+.table-header{
+display:grid;
+grid-template-columns:1fr 1fr;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+font-weight:600;
+}
+
+.table-header div{
+padding:18px 24px;
+}
+
+.table-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+border-bottom:1px solid #e2e8f0;
+transition:.3s;
+}
+
+.table-row:hover
+
+.table-row:last-child{
+border-bottom:none;
+}
+
+.table-row div{
+padding:18px 24px;
+}
+
+/* ==========================================
+DEPLOYMENT ARCHITECTURE
+========================================== */
+
+.architecture-flow{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.arch-card{
+width:170px;
+min-height:220px;
+background:white;
+border:1px solid #dbeafe;
+border-radius:20px;
+padding:20px;
+text-align:center;
+position:relative;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.arch-card:hover{
+transform:translateY(-5px);
+}
+
+.arch-number{
+position:absolute;
+top:12px;
+left:12px;
+width:30px;
+height:30px;
+background:#2563eb;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:14px;
+font-weight:600;
+}
+
+.arch-icon{
+font-size:48px;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+.arch-card h4{
+font-size:1rem;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.arch-card p{
+font-size:.85rem;
+color:#64748b;
+}
+
+.arch-arrow{
+font-size:28px;
+color:#2563eb;
+font-weight:bold;
+}
+
+/* ==========================================
+DOC BLOCK IMPROVEMENT
+========================================== */
+
+.doc-block{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.04);
+margin-bottom:30px;
+}
+
+.doc-block h2{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:15px;
+}
+
+/* ==========================================
+MOBILE RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+.table-header,
+.table-row{
+    grid-template-columns:1fr;
+}
+
+.architecture-flow{
+    flex-direction:column;
+}
+
+.arch-arrow{
+    transform:rotate(90deg);
+}
+
+.arch-card{
+    width:100%;
+    max-width:300px;
+}
+
+.config{
+    color: #818cf8;   
+}
+
+
+}
 }

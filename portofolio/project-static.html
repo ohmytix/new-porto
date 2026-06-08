@@ -1,115 +1,418 @@
 <!DOCTYPE html>
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentasi Proyek - Nama Proyek</title>
-    <link rel="stylesheet" href="../style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Widal Translate - DevOps Case Study</title>
+
+
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Nama<span>Anda</span>.</div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html#about">Tentang</a></li>
-            <li><a href="index.html#experience">Pengalaman</a></li>
-            <li><a href="index.html#portfolio">Portofolio</a></li>
-            <li><a href="index.html#skills">Skill</a></li>
-        </ul>
-        <div class="menu-toggle" id="mobileMenu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Hafidh<span>.</span></div>
 
-    <main class="doc-section">
-        <div class="doc-container">
-            
-            <a href="index.html#portfolio" class="back-btn">&larr; Kembali ke Portofolio</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">Tentang</a></li>
+        <li><a href="../index.html#experience">Pengalaman</a></li>
+        <li><a href="../index.html#portfolio">Portofolio</a></li>
+        <li><a href="../index.html#skills">Skill</a></li>
+    </ul>
 
-            <header class="doc-header">
-                <span class="project-category">[Kategori: Web App / UI UX Design]</span>
-                <h1 class="project-title">[Nama Proyek Utama Kamu]</h1>
-                <p class="project-subtitle">[Slogan singkat proyek, misal: Platform e-commerce modern dengan sistem pembayaran instan]</p>
-                
-                <div class="project-meta">
-                    <div class="meta-item"><strong>Peran:</strong> Frontend Developer</div>
-                    <div class="meta-item"><strong>Durasi:</strong> 3 Minggu (Januari 2026)</div>
-                    <div class="meta-item"><strong>Status:</strong> Selesai</div>
+    <div class="menu-toggle" id="mobileMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="doc-section">
+    <div class="doc-container">
+
+        <a href="../index.html#portfolio" class="back-btn">
+            ← Kembali ke Portofolio
+        </a>
+
+        <!-- HERO PROJECT -->
+        <header class="doc-header">
+
+            <span class="project-category">
+                DevOps Project
+            </span>
+
+            <h1 class="project-title">
+                Widal Translate
+            </h1>
+
+            <p class="project-subtitle">
+                Deployment Website Statis menggunakan Docker, Nginx,
+                Traefik Reverse Proxy dan Cloudflare DNS.
+            </p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <strong>Role:</strong> DevOps Engineer
                 </div>
-            </header>
 
-            <div class="doc-gallery">
-                <div class="main-preview">
-                    <img src="https://via.placeholder.com/1200x600" alt="Pratinjau Utama Proyek" class="responsive-img">
+                <div class="meta-item">
+                    <strong>Durasi:</strong> 1 Minggu
                 </div>
-                <div class="sub-previews">
-                    <img src="https://via.placeholder.com/600x400" alt="Tampilan Mobile" class="responsive-img">
-                    <img src="https://via.placeholder.com/600x400" alt="Fitur Dashboard" class="responsive-img">
+
+                <div class="meta-item">
+                    <strong>Tanggal:</strong> Mei 2026
+                </div>
+
+                <div class="meta-item">
+                    <strong>Status:</strong> Production Ready
                 </div>
             </div>
 
-            <div class="doc-grid">
-                
-                <div class="doc-main-content">
-                    
-                    <section class="doc-block">
-                        <h2>1. Ringkasan Proyek & Tantangan</h2>
-                        <p>Jelaskan latar belakang proyek ini di sini. Mengapa kamu membuatnya? Masalah apa yang ingin kamu selesaikan? Berikan gambaran umum yang jelas agar pembaca langsung paham esensi dari proyek yang kamu kerjakan.</p>
-                    </section>
+        </header>
 
-                    <section class="doc-block">
-                        <h2>2. Fitur Utama</h2>
-                        <p>Sebutkan poin-poin fitur terbaik yang berhasil kamu implementasikan ke dalam proyek ini:</p>
-                        <ul class="doc-list">
-                            <li><strong>Desain Responsif:</strong> Tampilan optimal diakses dari perangkat mobile, tablet, maupun desktop.</li>
-                            <li><strong>Optimasi Kecepatan:</strong> Pengurangan ukuran aset gambar untuk loading halaman di bawah 2 detik.</li>
-                            <li><strong>Integrasi API:</strong> Menghubungkan front-end dengan data eksternal secara asinkron.</li>
-                        </ul>
-                    </section>
+        <!-- SCREENSHOT -->
+        <section class="doc-gallery">
+            <div class="main-preview">
+                <img
+                    src="../assets/Screenshot 2026-06-03 082359.png"
+                    alt="Widal Translate Screenshot"
+                    class="responsive-img">
+            </div>
+        </section>
 
-                    <section class="doc-block">
-                        <h2>3. Proses Pembuatan & Solusi</h2>
-                        <p>Ceritakan metodologi kerjamu atau kendala teknis yang sempat membuatmu pusing, lalu jelaskan bagaimana cara kamu menyelesaikannya.</p>
-                        <blockquote class="doc-quote">
-                            <strong>Tantangan Teknis:</strong> Keranjang belanja sempat tidak memperbarui total harga secara otomatis saat jumlah produk diubah.<br>
-                            <strong>Solusi:</strong> Menggunakan teknik event delegation pada JavaScript untuk mendeteksi perubahan state secara real-time.
-                        </blockquote>
-                    </section>
+        <div class="doc-grid">
 
-                </div>
+            <!-- MAIN CONTENT -->
+            <div class="doc-main-content">
 
-                <aside class="doc-sidebar">
-                    
-                    <div class="sidebar-card">
-                        <h3>Teknologi</h3>
-                        <div class="tech-tags">
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Git</span>
-                        </div>
-                    </div>
+                <!-- TUJUAN -->
+                <section class="doc-block">
 
-                    <div class="sidebar-card">
-                        <h3>Tautan Proyek</h3>
-                        <a href="#" class="btn btn-full" target="_blank">Kunjungi Live Demo</a>
-                        <a href="#" class="btn btn-full btn-outline" target="_blank">Lihat Kode di GitHub</a>
-                    </div>
+                    <h2>🎯 Tujuan Proyek</h2>
 
-                </aside>
+                    <h3>Latar Belakang</h3>
+
+                    <p>
+                        Deployment website secara manual sering kali
+                        membutuhkan proses konfigurasi berulang dan rawan
+                        kesalahan ketika memindahkan aplikasi ke server
+                        yang berbeda.
+                    </p>
+
+                    <p>
+                        Selain itu, pengelolaan web server secara langsung
+                        membuat proses maintenance dan scaling menjadi
+                        lebih sulit dilakukan.
+                    </p>
+
+                    <h3>Tujuan</h3>
+
+                    <p>
+                        Membangun lingkungan deployment yang konsisten,
+                        portable, dan mudah dipindahkan menggunakan
+                        container Docker.
+                    </p>
+
+                    <h3>Target Implementasi</h3>
+
+                    <ul class="doc-list">
+                        <li>Website dapat diakses melalui domain publik.</li>
+                        <li>Nginx berjalan di dalam Docker Container.</li>
+                        <li>Traefik menangani routing domain secara otomatis.</li>
+                        <li>Mendukung SSL Certificate HTTPS.</li>
+                        <li>Deployment dapat dilakukan hanya dengan Docker Compose.</li>
+                    </ul>
+
+                    <h2> ⚙️ Teknologi yang Digunakan </h2> 
+                    <p class="section-desc"> Berikut adalah teknologi utama yang digunakan dalam proyek ini. </p>
+                    <img class="responsive-img" src="../assets/teknologi.png" alt=""> 
+
+                </section>
+
+                <!-- FITUR -->
+                <section class="doc-block">
+
+                    <h2>🚀 Fitur Utama</h2>
+
+                    <ul class="doc-list">
+
+                        <li>
+                            <strong>Containerized Deployment</strong><br>
+                            Seluruh aplikasi dijalankan menggunakan Docker
+                            sehingga deployment lebih konsisten.
+                        </li>
+
+                        <li>
+                            <strong>Nginx Web Server</strong><br>
+                            Menyediakan layanan web yang cepat dan ringan.
+                        </li>
+
+                        <li>
+                            <strong>Traefik Reverse Proxy</strong><br>
+                            Routing domain dilakukan secara otomatis tanpa
+                            konfigurasi manual yang kompleks.
+                        </li>
+
+                        <li>
+                            <strong>HTTPS Automation</strong><br>
+                            Mendukung SSL Certificate sehingga website
+                            dapat diakses secara aman.
+                        </li>
+
+                        <li>
+                            <strong>Portable Infrastructure</strong><br>
+                            Deployment dapat dipindahkan ke server lain
+                            hanya dengan menjalankan Docker Compose.
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <!-- ARSITEKTUR -->
+<section class="doc-block">
+
+<h2>
+    🏗️ Arsitektur Deployment
+</h2>
+
+<p>
+    Infrastruktur dibuat menggunakan pendekatan containerized deployment
+    sehingga mudah dipelihara, aman, dan dapat dipindahkan ke server lain.
+</p>
+
+<img class="responsive-img" src="../assets/alur.png" alt="">
+
+</section>
+
+                <!-- IMPLEMENTASI -->
+                <section class="doc-block">
+
+                    <h2>⚙️ Tahapan Implementasi</h2>
+
+                    <ol class="doc-list">
+
+                        <li>Clone repository di server</li>
+                            <p class="doc-quote">~/deploy# git clone https://git.crevo.my.id/zozon/WidalWeb.git</p>
+                        <li>
+                            Konfigurasi file docker-compose.yml
+                            <p class="doc-quote">~/deploy# nano docker-compose.yml
+                                <div class="code-container">    
+                                    <pre class="config">
+services:
+    web:
+        image: nginx:alpine
+        container_name: widal-website
+
+        volumes:
+        - ./:/usr/share/nginx/html
+        - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+        - "traefik.enable=true"
+        - "traefik.http.routers.static.rule=Host(`widal.crevo.my.id`)"
+        - "traefik.http.services.static.loadbalancer.server.port=80"
+        
+        networks:
+        - web
+        
+networks:
+    web:
+        labels:
+        external: true
+    </pre>                                
+
+                                </div>
+                            </p>
+
+                        </li>
+
+                        <li>
+                            Konfigurasi file nginx.conf
+                            <p class="doc-quote">~/deploy# nano nginx.conf</p>
+                            <div class="code-container">
+                                <pre>
+server {
+    listen 80;
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+                                </pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            Jalankan docker Compose
+                            <p class="doc-quote">~/deploy# doker compose up -d --build</p>
+                        </li>
+
+                        <li>
+                            Konfigurasi subdomain pada cloudflare
+                        </li>
+
+                        <li>
+                            Mengkonfigurasi DNS melalui Cloudflare.
+                        </li>
+
+                        <li>
+                            Melakukan pengujian domain dan HTTPS.
+                        </li>
+
+                        <li>
+                            Monitoring container menggunakan Docker CLI.
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <!-- CHALLENGE -->
+                <section class="doc-block">
+
+                    <h2>🛠️ Tantangan & Solusi</h2>
+
+                    <blockquote class="doc-quote">
+
+                        <strong>Tantangan #1</strong><br>
+                        Container tidak dapat diakses menggunakan domain
+                        publik karena konfigurasi routing belum sesuai.
+
+                        <br><br>
+
+                        <strong>Solusi</strong><br>
+                        Memperbaiki konfigurasi label Traefik dan Docker
+                        Network sehingga reverse proxy dapat mengenali
+                        service dengan benar.
+
+                    </blockquote>
+
+                    <blockquote class="doc-quote">
+
+                        <strong>Tantangan #2</strong><br>
+                        SSL Certificate tidak terbentuk otomatis.
+
+                        <br><br>
+
+                        <strong>Solusi</strong><br>
+                        Memastikan DNS Cloudflare telah mengarah ke server
+                        dan port 80 serta 443 dapat diakses dari internet.
+
+                    </blockquote>
+
+                </section>
+
+                <!-- HASIL -->
+                <section class="doc-block">
+
+                    <h2>📈 Hasil Akhir</h2>
+
+                    <p>
+                        Website berhasil di-deploy menggunakan Docker
+                        Container dan dapat diakses melalui domain publik
+                        dengan HTTPS aktif.
+                    </p>
+
+                    <ul class="doc-list">
+                        <li>Deployment lebih cepat dan konsisten.</li>
+                        <li>Konfigurasi lebih mudah dipelihara.</li>
+                        <li>Portable ke server lain.</li>
+                        <li>Lingkungan terisolasi menggunakan container.</li>
+                        <li>Mendukung deployment ulang hanya dengan satu perintah.</li>
+                    </ul>
+
+                </section>
 
             </div>
 
+            <!-- SIDEBAR -->
+            <aside class="doc-sidebar">
+
+                <div class="sidebar-card">
+
+                    <h3>Tech Stack</h3>
+
+                    <div class="tech-tags">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Docker Compose</span>
+                        <span class="tag">Traefik</span>
+                        <span class="tag">Nginx</span>
+                        <span class="tag">Cloudflare</span>
+                        <span class="tag">Git</span>
+                    </div>
+
+                </div>
+
+                <div class="sidebar-card">
+
+                    <h3>Project Information</h3>
+
+                    <p><strong>Role</strong><br>DevOps Engineer</p>
+
+                    <br>
+
+                    <p><strong>Environment</strong><br>Ubuntu Server 24.04</p>
+
+                    <br>
+
+                    <p><strong>Deployment</strong><br>Docker Compose</p>
+
+                    <br>
+
+                    <p><strong>Web Server</strong><br>Nginx</p>
+
+                    <br>
+
+                    <p><strong>Reverse Proxy</strong><br>Traefik</p>
+
+                </div>
+
+                <div class="sidebar-card">
+
+                    <h3>Tautan Proyek</h3>
+
+                    <a
+                        href="https://widal.crevo.my.id/"
+                        target="_blank"
+                        class="btn btn-full">
+                        🌐 Live Demo
+                    </a>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        class="btn btn-full btn-outline">
+                        💻 GitHub Repository
+                    </a>
+
+                </div>
+
+            </aside>
+
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; <span id="year"></span> [Nama Anda]. All Rights Reserved.</p>
-    </footer>
+    </div>
+</main>
 
-    <script src="script.js"></script>
+<footer>
+    <p>
+        © 2026 Hafidh. All Rights Reserved.
+    </p>
+</footer>
+
+<script src="../script.js"></script>
+
 </body>
 </html>
